@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<style>
+    .icon{
+        height: 50px;
+        width: 100px;
+    }
+    .navhead{
+        width: 300px;
+        padding-right: 1000px;
+    }
+    .place{
+        border-radius: 50px;
+    }
+    hr.or{
+        width: 40%;
+    }
+</style>
+<body>
+      <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="signinmodal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header border border-danger border-2">
+              <h1 class="modal-title" id="signinmodal">Sign In</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                        <div class="form-check d-grid mb-3 me-2">
+                            <label class="form-check-label " for="email">Email/User name</label>
+                            <input type="text" placeholder="Enter Email Address or Username" name="email" id="email" required>
+                        </div>
+                        <div class="form-check d-grid mb-3 me-2">
+                            <label class="form-check-label" for="password">Password</label>
+                            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                        </div>
+                        <button class="btn btn-lg d-grid col-12 bg-danger text-dark">Sign In</button>
+                        <div class="container d-flex mx-auto"><hr class="or ms-4"><span>&nbsp; or &nbsp;</span><hr class="or"></div>
+                        <div class="col-12 d-grid">
+                            <a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAABmJLR0QA/wD/AP+gvaeTAAACs0lEQVRIie2Vz08TQRTHv2+3VAoJIJxKIFC5APGoJCgXEw9erIkXuJLwI+CFv8CA3jiUmGggsQmBxCgmxtjEux48GU1IxIpYfge40FKplN3uzPOwULbbXdoKHkz8nnbmzft+3pud3QH+y0mhDR+mV8r/JJWKWjW53ax4uIfAQQBtAGqOIgkAUWZEpEIv0Fe/djbgzGadqtEoiAYBLivgpRMwZWSMUQw3JUoGesM7lwWLCIBAAZBNvKyyGtQH/AtFA73hnctCig8gVJUGy9omVabrTtB84MxmnarTRxTorKXKg1sNF+CvVJHSJdZSAs9jaat1TJDoQF9j3JrnsRupOo0Vgt1rr0SosxqqpdzFpGEDcosHdN8ARqy5So7T050AgP7TYK01njyYm5hpCOGtJutcTocKyR4wvKeZ3G32ZWGpDKP3fQLzuxlkpONyrwLulsB4lmGNEvPtQlVfqlKzz69W0ni9eojlfYGNX8JxPTGC1rFiC7cXAvose7nuArGpzRkY2vABXF2Mw7GYi1pWa3qbOil3eqVcNbxpp4z+1gpMdtU4hbJ6t63h5ttdx7qER69Ab+AQsHZoTuwVVbODvu0ZbqH4MSwXaOqrU4YmgIQmkdAkdHmyj4eCs/Nf4i5AQtQ6zPksmBEhwjV7zuzSAWaXDgAAz25cRHeL+UrG51N48HnfrTPTE3hjHed0KIUyB0A/1aE0aVLQS1cghvyrBEydF42InmCwft0dCMAgOQZQ7Bx4PwxVe2ifzAOirzGuMt0BKHkG2J4ABdEbyDv1+UAA+oB/QbDsIGCxdBbFVFa60F8fdYo6AgEAAw3fjYzRScSPUNxB0ohpQni0K263PeBwH+ZouClhACMIb00o4O6jH/FVwLxRyhRKg/CJGREpac5+QM5NoYVk7ePoz7q/Yv7P6zcaBP1fpdTfRwAAAABJRU5ErkJggg=="> Sign in Using Facebook</a>
+
+                          </div> 
+                        <div class="col-12 d-grid">
+                            <a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" href="#"><img src="https://img.icons8.com/color/16/000000/google-logo.png"> Sign in Using Google</a>
+
+                          </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="sigupnmodal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header border border-danger border-2">
+              <h1 class="modal-title" id="signupmodal">Sign Up</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                    <form action="https://formspree.io/f/xjvzkrpz"method="POST">
+                        <div class="form-check d-grid mb-3 me-2">
+                            <label class="form-check-label " for="email">Email/User name</label>
+                            <input type="text" placeholder="Enter Email Address or Username" name="email" id="email" required>
+                        </div>
+                        <div class="form-check d-grid mb-3 me-2">
+                            <label class="form-check-label" for="password">Password</label>
+                            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                        </div>
+                        <div class="form-check d-grid mb-3 me-2">
+                            <label class="form-check-label" for="phone">Phone Number</label>
+                            <input type="text" placeholder="Enter Phone Number" name="phone" id="phone" required>
+                        </div>
+                        <button class="btn btn-lg d-grid col-12 bg-danger text-dark">Sign In</button>
+                        <div class="container d-flex mx-auto"><hr class="or ms-4"><span>&nbsp; or &nbsp;</span><hr class="or"></div>
+                        <div class="col-12 d-grid">
+                            <a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAABmJLR0QA/wD/AP+gvaeTAAACs0lEQVRIie2Vz08TQRTHv2+3VAoJIJxKIFC5APGoJCgXEw9erIkXuJLwI+CFv8CA3jiUmGggsQmBxCgmxtjEux48GU1IxIpYfge40FKplN3uzPOwULbbXdoKHkz8nnbmzft+3pud3QH+y0mhDR+mV8r/JJWKWjW53ax4uIfAQQBtAGqOIgkAUWZEpEIv0Fe/djbgzGadqtEoiAYBLivgpRMwZWSMUQw3JUoGesM7lwWLCIBAAZBNvKyyGtQH/AtFA73hnctCig8gVJUGy9omVabrTtB84MxmnarTRxTorKXKg1sNF+CvVJHSJdZSAs9jaat1TJDoQF9j3JrnsRupOo0Vgt1rr0SosxqqpdzFpGEDcosHdN8ARqy5So7T050AgP7TYK01njyYm5hpCOGtJutcTocKyR4wvKeZ3G32ZWGpDKP3fQLzuxlkpONyrwLulsB4lmGNEvPtQlVfqlKzz69W0ni9eojlfYGNX8JxPTGC1rFiC7cXAvose7nuArGpzRkY2vABXF2Mw7GYi1pWa3qbOil3eqVcNbxpp4z+1gpMdtU4hbJ6t63h5ttdx7qER69Ab+AQsHZoTuwVVbODvu0ZbqH4MSwXaOqrU4YmgIQmkdAkdHmyj4eCs/Nf4i5AQtQ6zPksmBEhwjV7zuzSAWaXDgAAz25cRHeL+UrG51N48HnfrTPTE3hjHed0KIUyB0A/1aE0aVLQS1cghvyrBEydF42InmCwft0dCMAgOQZQ7Bx4PwxVe2ifzAOirzGuMt0BKHkG2J4ABdEbyDv1+UAA+oB/QbDsIGCxdBbFVFa60F8fdYo6AgEAAw3fjYzRScSPUNxB0ohpQni0K263PeBwH+ZouClhACMIb00o4O6jH/FVwLxRyhRKg/CJGREpac5+QM5NoYVk7ePoz7q/Yv7P6zcaBP1fpdTfRwAAAABJRU5ErkJggg=="> Signup Using Facebook</a>
+
+                          </div> 
+                        <div class="col-12 d-grid">
+                            <a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" href="#"><img src="https://img.icons8.com/color/16/000000/google-logo.png"> Signup Using Google</a>
+
+                          </div>
+                    </form>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="container-fluid">
+    <header class="container-fluid">
+        <nav class="container-fluid navbar navbar-expand-sm bg-white navbar-dark">
+            <div class="container-fluid">
+                        <a href="#" class="btn border-0">
+                            <img class="navbar-brand icon" src="/img/icon.jpg" alt="">
+                            <h1 class="d-none d-lg-none d-xl-inline text-danger">rentAplays</h1>
+                        </a>
+                <div class="d-sm-inline border place border-dark">
+                    <a class="btn border-0" href="#"><h5>Caloocan</h5></a>
+                    <a class="btn border-0" href="#"><h5>Cavite</h5></a>
+                    <a class="btn border-0" href="#"><h5>Bulacan</h5></a>
+                </div>
+                <div class="d-sm-inline border-dark dropdown me-5">
+                    <button class="dropdown border border-0 bg-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="rounded-pill border border-secondary border border-opacity-50" src="/img/signin.png" alt="">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>    
+                            <button type="button" class="btn dropdown-item" data-bs-toggle="modal" data-bs-target="#signin">
+                                <h4>Sign In</h4>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn dropdown-item" data-bs-toggle="modal" data-bs-target="#signup">
+                            Sign Up
+                            </button>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item disabled"><p class="text-sm-start">Other function here</p></a></li>
+                    </ul>
+                </div> 
+            </div>   
+        </nav>
+    </header>
+</div>
+<hr class="mt-0">
+</body>
+</html>
