@@ -1,2 +1,2 @@
-# juliuszzzxc.github.io hewo
+# juliuszzzxc.github.io
 hewo pre ko
