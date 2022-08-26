@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <title>Kodego Project 1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <style>
     .icon{
@@ -23,6 +24,10 @@
     hr.or{
         width: 40%;
     }
+    .ge :hover {
+    color: red;
+    text-decoration: underline;
+  }
 </style>
 <body>
       <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="signinmodal" aria-hidden="true">
@@ -93,21 +98,30 @@
           </div>
         </div>
       </div>
-<div class="container-fluid">
-    <header class="container-fluid">
-        <nav class="container-fluid navbar navbar-expand-sm bg-white navbar-dark">
+<div class="">
+    <header class="">
+        <nav class="navbar navbar-expand-sm bg-white navbar-dark">
             <div class="container-fluid">
                         <a href="#" class="btn border-0">
-                            <img class="navbar-brand icon" src="/img/icon.jpg" alt="">
+                            <img class="navbar-brand icon d-sm-inline" src="/img/icon.jpg" alt="">
                             <h1 class="d-none d-lg-none d-xl-inline text-danger">rentAplays</h1>
                         </a>
                 <div class="d-sm-inline border place border-dark">
-                    <a class="btn border-0" href="#"><h5>Caloocan</h5></a>
-                    <a class="btn border-0" href="#"><h5>Cavite</h5></a>
-                    <a class="btn border-0" href="#"><h5>Bulacan</h5></a>
+                    <nav class="navbar navbar-expand-lg d-sm-inline">
+                        <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse ge" id="navbarSupportedContent">
+                            <a class="btn border-0" href="#"><h5>Caloocan</h5></a>
+                            <a class="btn border-0" href="#"><h5>Cavite</h5></a>
+                            <a class="btn border-0" href="#"><h5>Bulacan</h5></a>
+                          </div>
+                        </div>
+                      </nav>
                 </div>
                 <div class="d-sm-inline border-dark dropdown me-5">
-                    <button class="dropdown border border-0 bg-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="dropdown border border-0 bg-white d-sm-inline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img class="rounded-pill border border-secondary border border-opacity-50" src="/img/signin.png" alt="">
                     </button>
                     <ul class="dropdown-menu">
@@ -130,5 +144,70 @@
     </header>
 </div>
 <hr class="mt-0">
+<div class="container-fluid d-lg-flex d-sm-block d-sm-grid">
+        <div class="col-8 container-fluid d-inline">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext text-black">1 / 6</div>
+                  <img src="/img/pg1/1.webp" style="width:100%">
+                  <div class="text text-black">Play Ground 1</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext text-black">2 / 6</div>
+                  <img src="/img/pg2/5.webp" style="width:100%">
+                  <div class="text text-black">Play Ground 2</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext text-black">3 / 6</div>
+                  <img src="/img/pg3/1.webp" style="width:100%">
+                  <div class="text text-black">Play Ground 3</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext text-black">4 / 6</div>
+                  <img src="/img/pg4/1.webp" style="width:100%">
+                  <div class="text text-black">Play Ground 4</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext text-black">5 / 6</div>
+                  <img src="/img/pg5/1.webp" style="width:100%">
+                  <div class="text text-black">Play Ground 5</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext text-black">6 / 6</div>
+                  <img src="/img/pg6/1.webp" style="width:100%">
+                  <div class="text text-black">Play Ground 6</div>
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+            
+        </div>
+        <div class="border border-danger container-fluid">
+            <div class=" container mt-5">
+                <h1 class="text-center">Welcome to rentAplays</h1>
+                <p class="text-center ms-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="ms-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odit reiciendis tempore doloribus ipsa officia provident asperiores numquam. Aliquid, sequi!</p>
+            </div>
+        </div>
+</div>
+<div class="container">
+
+</div>
+<script src="/js/img.js"></script>
 </body>
 </html>
