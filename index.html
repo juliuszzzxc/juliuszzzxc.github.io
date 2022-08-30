@@ -38,8 +38,15 @@
   .erp{
     font-family: MathSansBold;
   }
-  footer{
+  .footer{
     height: 30px;
+  }
+  .ipre{
+    width: 100px;
+    height: 100px;
+  }
+  .tesmo{
+    background-image: linear-gradient(to bottom right,red, white);
   }
 </style>
 <body>
@@ -64,7 +71,7 @@
                         <div class="ps-1">
                           <p>Don't have account yet? <a href="#" data-bs-toggle="modal" data-bs-target="#signup">sign up here</a></p>
                         </div>
-                        <button class="btn btn-lg d-grid col-12 bg-danger text-dark">Sign In</button>
+                        <button class="btn btn-lg d-grid col-12 bg-danger text-white">Sign In</button>
                         <div class="container d-flex mx-auto"><hr class="or ms-4"><span>&nbsp; or &nbsp;</span><hr class="or"></div>
                         <div class="col-12 d-grid">
                             <a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAABmJLR0QA/wD/AP+gvaeTAAACs0lEQVRIie2Vz08TQRTHv2+3VAoJIJxKIFC5APGoJCgXEw9erIkXuJLwI+CFv8CA3jiUmGggsQmBxCgmxtjEux48GU1IxIpYfge40FKplN3uzPOwULbbXdoKHkz8nnbmzft+3pud3QH+y0mhDR+mV8r/JJWKWjW53ax4uIfAQQBtAGqOIgkAUWZEpEIv0Fe/djbgzGadqtEoiAYBLivgpRMwZWSMUQw3JUoGesM7lwWLCIBAAZBNvKyyGtQH/AtFA73hnctCig8gVJUGy9omVabrTtB84MxmnarTRxTorKXKg1sNF+CvVJHSJdZSAs9jaat1TJDoQF9j3JrnsRupOo0Vgt1rr0SosxqqpdzFpGEDcosHdN8ARqy5So7T050AgP7TYK01njyYm5hpCOGtJutcTocKyR4wvKeZ3G32ZWGpDKP3fQLzuxlkpONyrwLulsB4lmGNEvPtQlVfqlKzz69W0ni9eojlfYGNX8JxPTGC1rFiC7cXAvose7nuArGpzRkY2vABXF2Mw7GYi1pWa3qbOil3eqVcNbxpp4z+1gpMdtU4hbJ6t63h5ttdx7qER69Ab+AQsHZoTuwVVbODvu0ZbqH4MSwXaOqrU4YmgIQmkdAkdHmyj4eCs/Nf4i5AQtQ6zPksmBEhwjV7zuzSAWaXDgAAz25cRHeL+UrG51N48HnfrTPTE3hjHed0KIUyB0A/1aE0aVLQS1cghvyrBEydF42InmCwft0dCMAgOQZQ7Bx4PwxVe2ifzAOirzGuMt0BKHkG2J4ABdEbyDv1+UAA+oB/QbDsIGCxdBbFVFa60F8fdYo6AgEAAw3fjYzRScSPUNxB0ohpQni0K263PeBwH+ZouClhACMIb00o4O6jH/FVwLxRyhRKg/CJGREpac5+QM5NoYVk7ePoz7q/Yv7P6zcaBP1fpdTfRwAAAABJRU5ErkJggg=="> Sign in Using Facebook</a>
@@ -105,7 +112,7 @@
                         <div class="ps-1">
                           <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signin">sign in here</a></p>
                         </div>
-                        <button class="btn btn-lg d-grid col-12 bg-danger text-dark">Sign In</button>
+                        <button class="btn btn-lg d-grid col-12 bg-danger text-white">Sign Up</button>
                         <div class="container d-flex mx-auto"><hr class="or ms-4"><span>&nbsp; or &nbsp;</span><hr class="or"></div>
                         <div class="col-12 d-grid">
                             <a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAABmJLR0QA/wD/AP+gvaeTAAACs0lEQVRIie2Vz08TQRTHv2+3VAoJIJxKIFC5APGoJCgXEw9erIkXuJLwI+CFv8CA3jiUmGggsQmBxCgmxtjEux48GU1IxIpYfge40FKplN3uzPOwULbbXdoKHkz8nnbmzft+3pud3QH+y0mhDR+mV8r/JJWKWjW53ax4uIfAQQBtAGqOIgkAUWZEpEIv0Fe/djbgzGadqtEoiAYBLivgpRMwZWSMUQw3JUoGesM7lwWLCIBAAZBNvKyyGtQH/AtFA73hnctCig8gVJUGy9omVabrTtB84MxmnarTRxTorKXKg1sNF+CvVJHSJdZSAs9jaat1TJDoQF9j3JrnsRupOo0Vgt1rr0SosxqqpdzFpGEDcosHdN8ARqy5So7T050AgP7TYK01njyYm5hpCOGtJutcTocKyR4wvKeZ3G32ZWGpDKP3fQLzuxlkpONyrwLulsB4lmGNEvPtQlVfqlKzz69W0ni9eojlfYGNX8JxPTGC1rFiC7cXAvose7nuArGpzRkY2vABXF2Mw7GYi1pWa3qbOil3eqVcNbxpp4z+1gpMdtU4hbJ6t63h5ttdx7qER69Ab+AQsHZoTuwVVbODvu0ZbqH4MSwXaOqrU4YmgIQmkdAkdHmyj4eCs/Nf4i5AQtQ6zPksmBEhwjV7zuzSAWaXDgAAz25cRHeL+UrG51N48HnfrTPTE3hjHed0KIUyB0A/1aE0aVLQS1cghvyrBEydF42InmCwft0dCMAgOQZQ7Bx4PwxVe2ifzAOirzGuMt0BKHkG2J4ABdEbyDv1+UAA+oB/QbDsIGCxdBbFVFa60F8fdYo6AgEAAw3fjYzRScSPUNxB0ohpQni0K263PeBwH+ZouClhACMIb00o4O6jH/FVwLxRyhRKg/CJGREpac5+QM5NoYVk7ePoz7q/Yv7P6zcaBP1fpdTfRwAAAABJRU5ErkJggg=="> Signup Using Facebook</a>
@@ -121,7 +128,7 @@
         </div>
       </div>
       <!-- modal signup end here -->
-<div class="container-fluid fixed-top sticky-top bg-white border border-dark border-opacity-25 border-start-0 border-end-0 border-top-0">
+<div class="container-fluid sticky-top bg-white border border-dark border-opacity-25 border-start-0 border-end-0 border-top-0">
   <header class="container-fluid">
     <nav class="navbar navbar-expand-sm bg-white navbar-dark">
       <div class="container-fluid">
@@ -136,9 +143,9 @@
                       <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse ge" id="navbarSupportedContent">
-                    <a class="btn border-0" href="#"><h5>Caloocan</h5></a>
-                    <a class="btn border-0" href="#"><h5>Cavite</h5></a>
-                    <a class="btn border-0" href="#"><h5>Bulacan</h5></a>
+                    <a class="btn border-0" href="#"><h5>Home</h5></a>
+                    <a class="btn border-0" href="#playground"><h5>Playgrounds</h5></a>
+                    <a class="btn border-0" href="#about"><h5>About Us</h5></a>
                   </div>
                     </div>
               </nav>
@@ -199,16 +206,35 @@
               
           </div>
           <div class="border border-dark border-opacity-25 container-fluid">
-              <div class=" container mt-5">
+              <div class=" container mt-1">
                   <h1 class="text-center">Welcome to <span class="erp text-danger">rentAplays</span></h1>
                   <p class="text-center">Your kids happiness and security is our priority</p>
-                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odit reiciendis tempore doloribus ipsa officia provident asperiores numquam. Aliquid, sequi!</p>
+                  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odit reiciendis tempore doloribus ipsa!</p>
+              </div>
+              <div class="mx-auto container-fluid col-sm-12">
+                <h5 class="ps-1">Have any suggestion for better user experience? feel free to message us.</h5>
+                <form
+                  method="POST">
+                  <div class="mb-2">
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                  </div>
+                  <div class="mb-2">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                  </div>
+                  <div class="mb-2">
+                    <textarea class="form-control" id="message" rows="2" placeholder="Message"></textarea>
+                  </div>
+                  <!-- your other form fields go here -->
+                  <div class="d-flex justify-content-end mb-1">
+                    <a type="button" class="btn btn-outline-danger" href="/index.html">Submit</a>
+                   </div>
+                </form>
               </div>
           </div>
   </div>
 </div>
   <hr>
-<div class="container-fluid pb-4 pt-0">
+<div class="container-fluid p-0" id="playground">
   <div class="container-fluid d-lg-inline-block">
       <div class="container-fluid flex-row d-lg-flex d-md-flex">
         <!-- first content start here -->
@@ -217,7 +243,7 @@
             <div id="content1" class="carousel slide" data-bs-touch="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="/img/pg1/1.webp" class="d-block w-100 " alt="...">
+                  <img src="/img/pg1/1.webp" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                   <img src="/img/pg1/2.webp" class="d-block w-100" alt="...">
@@ -225,16 +251,16 @@
                 <div class="carousel-item">
                   <img src="/img/pg1/3.webp" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item">
                   <img src="/img/pg1/4.webp" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item">
                   <img src="/img/pg1/5.webp" class="d-block w-100" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#content1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-                <span class="visually-hidden ">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#content1" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -244,7 +270,7 @@
             <div class="card-body">
               <h5 class="card-title">French Regional Park</h5>
               <p class="card-text opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quam.</p>
-              <p class="card-text opacity-50">5,331 kilometers</p>
+              <p class="card-text opacity-50">5,331 kilometersbr <br> Aug 27-30 <br><span class="text-opacity-100 text-danger">₱1,800</span></p>
               <a data-bs-toggle="modal" data-bs-target="#signin" class="btn btn-outline-danger">Book Now</a>
             </div>
           </div>
@@ -283,7 +309,7 @@
             <div class="card-body">
               <h5 class="card-title">Domino Park</h5>
               <p class="card-text opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quam.</p>
-              <p class="card-text opacity-50">1,331 kilometers</p>
+              <p class="card-text opacity-50">1,331 kilometers <br> Aug 27-30 <br><span class="text-opacity-100 text-danger">₱2,800</span></p>
               <a data-bs-toggle="modal" data-bs-target="#signin" class="btn btn-outline-danger">Book Now</a>
             </div>
           </div>
@@ -322,7 +348,7 @@
             <div class="card-body">
               <h5 class="card-title">Wilburg Park</h5>
               <p class="card-text opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quam.</p>
-              <p class="card-text opacity-50">331 kilometers</p>
+              <p class="card-text opacity-50">331 kilometers <br> Sept 01-06 <br><span class="text-opacity-100 text-danger">₱2,200</span></p>
               <a data-bs-toggle="modal" data-bs-target="#signin" class="btn btn-outline-danger">Book Now</a>
             </div>
           </div>
@@ -331,18 +357,18 @@
         </div>
       <div class="container-fluid container-fluid flex-row d-lg-flex d-md-flex">
         <!-- fort content start here -->
-        <div class="container-fluid p-2">
+          <div class="container-fluid pt-0 p-2">
             <div class="card container-fluid">
               <div id="content4" class="carousel slide" data-bs-touch="false">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="/img/pg4/3.webp" class="d-block w-100" alt="...">
+                    <img src="/img/pg4/1.webp" class="d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <img src="/img/pg4/2.webp" class="d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item active">
-                    <img src="/img/pg4/1.webp" class="d-block w-100" alt="...">
+                  <div class="carousel-item">
+                    <img src="/img/pg4/3.webp" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
                     <img src="/img/pg4/4.webp" class="d-block w-100" alt="...">
@@ -363,25 +389,25 @@
               <div class="card-body">
                 <h5 class="card-title">Montery Park</h5>
                 <p class="card-text opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quam.</p>
-                <p class="card-text opacity-50">2,331 kilometers</p>
+                <p class="card-text opacity-50">2,331 kilometers <br> Sept 10-13 <br><span class="text-opacity-100 text-danger">₱1,800</span></p>
                 <a data-bs-toggle="modal" data-bs-target="#signin" class="btn btn-outline-danger">Book Now</a>
               </div>
             </div>
           </div>
         <!-- fort content end here -->
         <!-- fifth content start here -->
-          <div class="container-fluid p-2">
+          <div class="container-fluid pt-0 p-2">
             <div class="card container-fluid">
               <div id="content5" class="carousel slide" data-bs-touch="false">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="/img/pg5/3.webp" class="d-block w-100" alt="...">
+                    <img src="/img/pg5/1.webp" class="d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <img src="/img/pg5/2.webp" class="d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item active">
-                    <img src="/img/pg5/1.webp" class="d-block w-100" alt="...">
+                  <div class="carousel-item">
+                    <img src="/img/pg5/3.webp" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
                     <img src="/img/pg5/4.webp" class="d-block w-100" alt="...">
@@ -402,28 +428,28 @@
               <div class="card-body">
                 <h5 class="card-title">Cannery Park</h5>
                 <p class="card-text opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quam.</p>
-                <p class="card-text opacity-50">880 kilometers</p>
+                <p class="card-text opacity-50">880 kilometers <br> Sept 10-13 <br><span class="text-opacity-100 text-danger">₱2,900</span></p>
                 <a data-bs-toggle="modal" data-bs-target="#signin" class="btn btn-outline-danger">Book Now</a>
               </div>
             </div>
           </div>
         <!-- fifth content start here -->
         <!-- sixth content start here -->
-          <div class="container-fluid p-2">
+          <div class="container-fluid pt-0 p-2">
             <div class="card container-fluid">
               <div id="content6" class="carousel slide" data-bs-touch="false">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="/img/pg6/1.webp" class="d-block w-100" alt="...">
+                    <img src="/img/pg6/4.webp" class="d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <img src="/img/pg6/2.webp" class="d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <img src="/img/pg6/3.webp" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="/img/pg6/4.webp" class="d-block w-100" alt="...">
+                    <img src="/img/pg6/1.webp" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
                     <img src="/img/pg6/5.webp" class="d-block w-100" alt="...">
@@ -441,7 +467,7 @@
               <div class="card-body">
                 <h5 class="card-title">Pioneer Park</h5>
                 <p class="card-text opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quam.</p>
-                <p class="card-text opacity-50">699 kilometers</p>
+                <p class="card-text opacity-50">699 kilometers <br> Sept 20-26 <br><span class="card-text opacity-100 text-danger">₱3,800</span></p>
                 <a data-bs-toggle="modal" data-bs-target="#signin" class="btn btn-outline-danger">Book Now</a>
               </div>
             </div>
@@ -450,18 +476,105 @@
       </div>
   </div>
 </div>
-<footer class="container-fluid fixed-bottom bg-white border border-dark border-opacity-25 border-start-0 border-end-0 border-bottom-0">
-  <div class="container-fluid">
-    <div class="container-fluid d-flex">
+<div class="container-fluid mx-auto"  id="about">
+  <h1 class="text-center erp">About Us</h1>
+</div>
+<div class="container-fluid border border-dark border-opacity-25 border-end-0">
+  <div class="container-fluid d-lg-flex d-sm-block d-sm-grid">
+          <div class="col-5 container-fluid d-inline">
+            <div>
+              <h1 class="text-center text-dark erp"> Page Info</h1>
+              <h1 class="erp text-danger">rentAplays</h1>
+              <p>rentaplays is website where you can book some private playgrounds to be sure that your kids are away from virus, our team is making sure that all our facilities after a session.</p>
+              <p>and also away from getting chance of your kids being kidnap all our facilities is monitored by cctv 24/7</p>
+            </div>
+          </div>
+          <div class="border border-dark border-opacity-25 container-fluid">
+            <h1 class="text-dark text-center erp">Testimony</h1>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <!-- testimony 1st starts here -->
+                <div class="carousel-item w-100 active">
+                  <div class="card border-0  w-100">
+                    <img src="/img/logo.png" class="rounded-circle mx-auto my-3 ipre border border-dark" alt="...">
+                    <div class="card-body text-dark text-opacity-75 ps-5 pe-5">
+                      <h5 class="card-title ps-4 erp text-danger">Joven Dimitri <span class="text-dark fs-6"><p>Parent</p></span></h5>
+                      <p class="card-text ps-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem.</p><br>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <!-- testimony 1st end here -->
+                <!-- testimony 2nd starts here -->
+                <div class="carousel-item w-100">
+                  <div class="card border-0 w-100">
+                    <img src="/img/logo.png" class="rounded-circle mx-auto my-3 ipre border border-danger" alt="...">
+                    <div class="card-body container-fluid text-dark text-opacity-75 ps-5 pe-5">
+                      <h5 class="card-title text-danger erp ps-4">Benedict Satoshi <span><p class="text-dark fs-6">Parent</p></span></h5>
+                      <p class="card-text ps-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, excepturi.</p><br>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <!-- testimony 2nd end here -->
+                <!-- testimony 3rd starts here -->
+                <div class="carousel-item w-100">
+                  <div class="card border-0 w-100">
+                    <img src="/img/icon.jpg" class="rounded-circle mx-auto my-3 ipre border border-danger" alt="...">
+                    <div class="card-body text-dark text-opacity-75 ps-5 pe-5">
+                      <h5 class="card-title ps-4 text-danger erp">Hercules John <span><p class="text-dark fs-6">Parent</p></span></h5>
+                      <p class="card-text ps-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, laboriosam!</p><br>
+                    </div>
+                  </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          </div>
+  </div>
+</div>
+<div class="footer container-fluid fixed-bottom bg-white border border-dark border-opacity-25 border-start-0 border-end-0 border-bottom-0">
+  <div class="container-fluid d-flex">
+    <div class="container-fluid d-sm-flex">
       <p>@2022 rentAplays,Inc . &nbsp;</p>
       <p><a class="text-black" href="#">Privacy </a> &nbsp;. &nbsp;</p>
       <p><a class="text-black" href="#">Terms</a></p>
     </div>
-    <div>
-      
+    <div class="container-fluid d-flex justify-content-end">
+      <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABrElEQVRIid2VQUtCQRDHf1p6Mb9A0bWDnsVOFRgdw0SiW5dACtHOnSOkW58hE/osBVFSqRVBRB1DjIwO2uHN8gbb9WlHB5Z97/+f+c/svN19MOkWBTaBGtAAPmU0gDPhov8VzwFPQD9gPAIb4wiHgWMlcA2UgAQQk5EEysCN8qtIbKAZ8W+gEBAUBnbF1yQZajklvuzwiQNpYA1ICbaikmRd4lH8nheGFNDBb8uH4vYEewAituBN/J7b2jIDtJX4K3Cl+CmgLlzelqAmZMlRfVqJHzp89oWv2simkAlHcF4lWHL4JIVvGEC3YlbmF0fwtHr+cfiY2DkbaT5ebAA/wX3Ibgd844K3DaBX8CbzvKM6mzUH3k3suwH0si+BBSCD6iFwLpWmgB3BKsAzf1eQkfnCVo3ZpnUgZOG38FuzaOHDktC5TaN4F1cf79CMm6AoXAvHQQPvVuwDX/jLHSXBKtAFesC6S9xYRSUp4rfLliCEdzC7gh8FiYPXS5PEbMUycKCwbbxTey/vPREf6bo2lsW7uIJ+OC1GaIvLIng7oirVdmTcAafCOT/oZNgvkzeTt1FZnBUAAAAASUVORK5CYII="></p>
+      <p>rentaplays</p>
+      <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABW0lEQVQ4jc3Uu0pdURAG4E/x0hybYJlTeAOJRbDxGYL3ysa3sFC0EkwgySP4BgqSoHh5BS0EUbxf4JA+KWKjxbFYa8v2uPZWO38YFsyamfXPmgvvHU0JXSuG0f+C7wm2cV9m1IdT1F8px+gtYtiKQ/TgO7ZwV/BwG0Ywhwt8TjGdjK8uJQJUo2SYwy6+Rp/x7KI5Z/Qpnhs53QSuUItyiTHsYQ3r0W4gFbAtnrc5xr/wActROvEbFfzM2bYnsrIY6Q8If3uJv+jK2XTjn/BvGbN69H3GMI+qUJwV3OT011gVKltN+BUGzJDq0wz1twSsCcWYEtLM0BN1F/iTcmwpYTAjFGVfSFMM1oHpEr9HLAhpDOV0Y5FNNhnnQkNnGIr6+VTAssb+GKUR3zQ0duPoHQjz/AObykdvFLM4w6CCJdErDPxrl8ORp0UrXF9fhIGvFDD8H7PZKWL2fvEAIFRb7DKYodYAAAAASUVORK5CYII="></p>
+      <p>rentaplays</p>
+      <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABAklEQVQ4jd3TPytFcRzH8VeITHchpYuHoIRJdrvFE5DNolyTMngSduUxIFFKZGBSFgsZbwq55R7DOeV0Ouf8fpdFPvWdPt/P+/f9/eO/qi+mqRnw+7GJByS4wQLGsIrBYuAS6zXA3QyUr090sIaJYuAZXeyhUfCGs2ARmOANtxgtAo9yTU/YxmTmTVfAErQxUralRXyUBB5xUQO8K4PBme8D76WO85D89V9jqmq1Gp1XGQ2c/mDCubrVlnDVA+wkNP4MXiNhHcyGgDCPQ7wEgBsxMNIvtiJ9LmWgLrZCkCZ2sC991FVT3UvPOUrjaElvup0B3jPIAZYxFAsr08Bvwn9XX4VHhEGciqGMAAAAAElFTkSuQmCC"></p>
+      <p>rentaplays</p>
     </div>
   </div>
-</footer>
+</div>
 <script src="//code.tidio.co/nylnbktx4k1hjnvojdwfer1igsuxbr87.js" async></script>
 </body>
 </html>
